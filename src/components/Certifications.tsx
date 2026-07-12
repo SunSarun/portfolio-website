@@ -33,7 +33,7 @@ export const Certifications = () => {
       <div className="max-w-7xl mx-auto">
         <Reveal className="mb-20">
           <span className="text-violet-400 mono text-xs tracking-[0.5em] uppercase mb-4 block">Validation</span>
-          <h2 className="text-5xl md:text-7xl font-bold tracking-tighter uppercase glow-text">Certifications</h2>
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tighter uppercase glow-text">Certifications</h2>
         </Reveal>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {certifications.map((cert, i) => (

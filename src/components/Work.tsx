@@ -20,7 +20,7 @@ export const Work = () => {
     <section id="work" className="relative py-32 px-6 max-w-7xl mx-auto">
       <Reveal className="mb-20">
         <span className="text-cyan-400 mono text-xs tracking-[0.5em] mb-4 block">Porfolio</span>
-        <h2 className="text-5xl md:text-7xl font-bold tracking-tighter uppercase glow-text">Featured_Deployments</h2>
+        <h2 className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tighter uppercase glow-text">Featured_Deployments</h2>
       </Reveal>
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -38,7 +38,7 @@ export const Work = () => {
             </div>
             <div className="flex justify-between items-start px-4">
               <div>
-                <h3 className="text-3xl md:text-4xl font-bold mb-2 group-hover:text-cyan-400 transition-colors uppercase">{project.title}</h3>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 group-hover:text-cyan-400 transition-colors uppercase">{project.title}</h3>
                 <p className="text-slate-400 text-base md:text-lg max-w-md">{project.desc}</p>
               </div>
               <span className="text-xs mono border border-white/10 px-4 py-1.5 rounded-full text-slate-500 bg-white/5">

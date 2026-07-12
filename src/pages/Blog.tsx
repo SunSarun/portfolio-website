@@ -26,7 +26,7 @@ export const Blog = () => {
     <section className="pt-32 pb-20 px-6">
       <div className="max-w-4xl mx-auto">
         <Reveal>
-          <h1 className="text-6xl md:text-8xl font-bold tracking-tighter glow-text mb-8">
+          <h1 className="text-3xl sm:text-6xl md:text-8xl font-bold tracking-tighter glow-text mb-8">
             THOUGHTS<span className="text-cyan-400">.LOG</span>
           </h1>
           <p className="text-slate-400 text-xl mb-16 mono">
@@ -41,7 +41,7 @@ export const Blog = () => {
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                   <span className="text-xs text-violet-400 mono tracking-[0.2em]">{post.category} // {post.date}</span>
                 </div>
-                <h2 className="text-4xl font-bold mb-4 group-hover:text-cyan-400 transition-colors duration-300">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 group-hover:text-cyan-400 transition-colors duration-300">
                   {post.title}
                 </h2>
                 <p className="text-slate-400 text-lg leading-relaxed mb-6">

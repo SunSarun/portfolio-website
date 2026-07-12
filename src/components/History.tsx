@@ -6,20 +6,20 @@ export const History = () => {
       <div className="max-w-4xl mx-auto">
         <Reveal className="mb-20 text-center">
           <span className="text-cyan-400 mono text-[10px] tracking-[0.5em] uppercase mb-4 block">Timeline</span>
-          <h2 className="text-4xl md:text-6xl font-bold tracking-tighter uppercase glow-text">Experiences</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tighter uppercase glow-text">Experiences</h2>
         </Reveal>
         
-        <div className="relative pl-8 md:pl-0">
-          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-violet-500/50 to-transparent -translate-x-1/2"></div>
+        <div className="relative">
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-violet-500/50 to-transparent -translate-x-1/2"></div>
           
           {/* Entry 1 */}
           <Reveal className="relative mb-16 md:mb-24 flex flex-col md:flex-row items-start md:items-center">
-            <div className="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+            <div className="pl-10 md:pl-0 md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
               <div className="text-cyan-400 mono text-xs mb-2">2022 — PRESENT</div>
               <h3 className="text-xl font-bold uppercase text-white"> University Experiences </h3>
               <p className="text-slate-400 text-sm mt-2"> Enroll in University went through basic programming projects.</p>
             </div>
-            <div className="absolute left-[-17px] md:left-1/2 w-8 h-8 rounded-full border border-cyan-500/50 bg-slate-950 z-10 md:-translate-x-1/2 flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.3)]">
+            <div className="absolute left-4 md:left-1/2 -translate-x-1/2 top-1 md:top-1/2 translate-y-0 md:-translate-y-1/2 w-8 h-8 rounded-full border border-cyan-500/50 bg-slate-950 z-10 flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.3)]">
               <div className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></div>
             </div>
             <div className="md:w-1/2 md:pl-12"></div>
@@ -28,10 +28,10 @@ export const History = () => {
           {/* Entry 2 */}
           <Reveal className="relative mb-16 md:mb-24 flex flex-col md:flex-row items-start md:items-center" delay={0.2}>
             <div className="md:w-1/2 md:pr-12"></div>
-            <div className="absolute left-[-17px] md:left-1/2 w-8 h-8 rounded-full border border-white/10 bg-slate-950 z-10 md:-translate-x-1/2 flex items-center justify-center">
+            <div className="absolute left-4 md:left-1/2 -translate-x-1/2 top-1 md:top-1/2 translate-y-0 md:-translate-y-1/2 w-8 h-8 rounded-full border border-white/10 bg-slate-950 z-10 flex items-center justify-center">
               <div className="w-2 h-2 rounded-full bg-violet-500/40"></div>
             </div>
-            <div className="md:w-1/2 md:pl-12 text-left">
+            <div className="pl-10 md:pl-12 md:w-1/2 text-left">
               <div className="text-slate-500 mono text-xs mb-2">2025 — PRESENT</div>
               <h3 className="text-xl font-bold uppercase text-white/80"> Personal Projects </h3>
               <p className="text-slate-400 text-sm mt-2"> Experieance in building small software, embeded hardware, linux system, home labs, routing network, machince learning, and AI.  </p>

@@ -1,1 +1,21 @@
-/* Clear App.css since we're using Tailwind and index.css */
+/* Base styles for mobile first */
+.layout-container {
+  display: flex;
+  flex-direction: column; /* Stacks header, content, and footer vertically */
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+}
+
+/* Desktop styles (Screens wider than 768px) */
+@media (min-width: 768px) {
+  .layout-container {
+    padding: 2rem;
+    /* If you have a sidebar, you could change direction to row here */
+    /* flex-direction: row; */
+  }
+}

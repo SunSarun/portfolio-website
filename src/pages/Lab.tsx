@@ -5,7 +5,7 @@ export const Lab = () => {
     <section className="pt-32 pb-20 px-6">
       <div className="max-w-7xl mx-auto">
         <Reveal>
-          <h1 className="text-6xl md:text-8xl font-bold tracking-tighter glow-text mb-8">
+          <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold tracking-tighter glow-text mb-8">
             THE <span className="text-violet-400">LAB</span>
           </h1>
           <p className="text-slate-400 text-xl max-w-2xl mb-12 mono">
@@ -21,7 +21,7 @@ export const Lab = () => {
                 <div className="scanner opacity-0 group-hover:opacity-40 transition-opacity"></div>
                 <div className="relative z-10">
                   <div className="text-xs text-cyan-400 mb-4 mono tracking-widest uppercase">Experiment_{i.toString().padStart(3, '0')}</div>
-                  <h3 className="text-3xl font-bold mb-4">Neural Mesh Visualizer</h3>
+                  <h3 className="text-2xl sm:text-3xl font-bold mb-4">Neural Mesh Visualizer</h3>
                   <p className="text-slate-400 mb-6 text-lg">A real-time WebGL experiment exploring organic particle movement and neural connectivity patterns.</p>
                   <div className="flex gap-3">
                     <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs mono">THREE.JS</span>
