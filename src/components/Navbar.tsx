@@ -64,7 +64,7 @@ export const Navbar = () => {
             <NavLink to="#arsenal" hash isHome={isHome} currentPath={location.pathname}>Arsenal</NavLink>
             <NavLink to="#work" hash isHome={isHome} currentPath={location.pathname}>Archive</NavLink>
             <NavLink to="#certifications" hash isHome={isHome} currentPath={location.pathname}>Certs</NavLink>
-            <NavLink to="/lab" isHome={isHome} currentPath={location.pathname}>Labs</NavLink>
+           //<NavLink to="/lab" isHome={isHome} currentPath={location.pathname}>Labs</NavLink>
             <a href="https://blog.sarun.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">Blog</a>
           </nav>
           
