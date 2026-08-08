@@ -64,10 +64,10 @@ export const Contact = () => {
       <div className="max-w-4xl mx-auto">
         <Reveal>
           <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold tracking-tighter glow-text mb-8">
-            CONTACT<span className="text-cyan-400">.LOG</span>
+            CONTACT<span className="text-cyan-400"> ME</span>
           </h1>
           <p className="text-slate-400 text-xl mb-12 mono">
-            [CHANNELS_ESTABLISHED] - Choose your preferred secure protocol. I usually respond within a few hours.
+            Choose your preferred secure protocol. I usually respond within a few hours.
           </p>
         </Reveal>
 

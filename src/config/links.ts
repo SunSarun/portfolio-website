@@ -6,7 +6,7 @@ export const CONTACT_LINKS = {
   },
   telegram: {
     name: 'Telegram',
-    value: '@sunsarun69',
+    value: '@Sun_Sarun',
     link: 'https://t.me/Sun_Sarun/',
   },
   linkedin: {
