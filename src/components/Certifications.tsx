@@ -1,8 +1,7 @@
 import { Reveal } from './Reveal';
-import { certifications } from '../config/certifications';
+import certifications from '../data/certifications.json';
 
 export const Certifications = () => {
-
   return (
     <section id="certifications" className="relative py-32 px-6">
       <div className="max-w-7xl mx-auto">

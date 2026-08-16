@@ -1,0 +1,38 @@
+{
+  "email": {
+    "name": "Email",
+    "value": "sun@sarun.dev",
+    "link": "mailto:sun@sarun.dev",
+    "color": "from-cyan-500/20"
+  },
+  "telegram": {
+    "name": "Telegram",
+    "value": "@Sun_Sarun",
+    "link": "https://t.me/Sun_Sarun/",
+    "color": "from-blue-500/20"
+  },
+  "linkedin": {
+    "name": "LinkedIn",
+    "value": "Sun Sarun",
+    "link": "https://www.linkedin.com/in/sun-sarun/",
+    "color": "from-indigo-500/20"
+  },
+  "signal": {
+    "name": "Signal",
+    "value": "Secure Messenger",
+    "link": "https://signal.me/#eu/XVip7-wGTQupoV8v5SWEEC9QissuDfo76oUcqSVP0WO44E9ZRtJAG5uUAJ8aQ3ou",
+    "color": "from-cyan-500/20"
+  },
+  "github": {
+    "name": "GitHub",
+    "value": "@SunSarun",
+    "link": "https://github.com/SunSarun/",
+    "color": "from-violet-500/20"
+  },
+  "website": {
+    "name": "Website",
+    "value": "sarun.dev",
+    "link": "https://sarun.dev",
+    "color": "from-emerald-500/20"
+  }
+}

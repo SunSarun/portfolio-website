@@ -1,0 +1,18 @@
+{
+  "subtitle": "Timeline",
+  "title": "Experiences",
+  "timeline": [
+    {
+      "period": "2022 — PRESENT",
+      "title": "University Experiences",
+      "desc": "Enroll in University went through basic programming projects.",
+      "active": true
+    },
+    {
+      "period": "2025 — PRESENT",
+      "title": "Personal Projects",
+      "desc": "Experience in building software, embedded hardware, Linux systems, home labs, computer networks, machine learning, and AI.",
+      "active": false
+    }
+  ]
+}

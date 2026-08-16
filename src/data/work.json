@@ -1,0 +1,34 @@
+{
+  "subtitle": "Portfolio",
+  "title": "Featured_Deployments",
+  "projects": [
+    {
+      "title": "Type 1 Hypervisor From Scratch",
+      "desc": "Create a Edge Type 1 Hypervisor using ArchLinux.",
+      "year": "2026",
+      "img": "https://raw.githubusercontent.com/SunSarun/blog-post/main/posts/setup-edge-type1hypervisor-using-arch-qemu-and-cockpit/kvm-vagrant-archlinux.webp",
+      "link": "https://blog.sarun.dev/#setup-edge-type1hypervisor-using-arch-qemu-and-cockpit"
+    },
+    {
+      "title": "Hosting Local AI",
+      "desc": "Hosting AI using Docker, Ollama, OpenWebUI, and SearXng.",
+      "year": "2026",
+      "img": "https://raw.githubusercontent.com/SunSarun/blog-post/main/posts/local-ai-with-ollama-openwebui-and-docker/ollama-docker.webp",
+      "link": "https://blog.sarun.dev/#local-ai-with-ollama-openwebui-and-docker"
+    },
+    {
+      "title": "Hosting Minecraft Server",
+      "desc": "Hosting Game server using Docker.",
+      "year": "2026",
+      "img": "https://raw.githubusercontent.com/SunSarun/blog-post/main/posts/minecraft-hosting-with-docker-dockercompose-and-reverseproxy/minecraft.webp",
+      "link": "https://blog.sarun.dev/#minecraft-hosting-with-docker-dockercompose-and-reverseproxy"
+    },
+    {
+      "title": "Window 11 Debloat",
+      "desc": "Debloating Win 11 for performance.",
+      "year": "2026",
+      "img": "https://raw.githubusercontent.com/SunSarun/blog-post/main/posts/setup-new-window-installation-and-debloating/cover.webp",
+      "link": "https://blog.sarun.dev/#setup-new-window-installation-and-debloating"
+    }
+  ]
+}

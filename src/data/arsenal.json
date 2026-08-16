@@ -1,0 +1,26 @@
+{
+  "subtitle": "Skill Set",
+  "title": "Technical_Arsenal",
+  "modules": [
+    {
+      "id": "01/",
+      "title": "Frontend-Engine",
+      "desc": "React, Svelte, TailwindCSS"
+    },
+    {
+      "id": "02/",
+      "title": "Backend_Core",
+      "desc": "Node.js, Rust, PHP, PostgreSQL, Laravel, MySQL, OracleDB"
+    },
+    {
+      "id": "03/",
+      "title": "System_Design",
+      "desc": "Figma, UI/UX, Database-Design, System-Architecture"
+    },
+    {
+      "id": "04/",
+      "title": "Dev_Ops",
+      "desc": "Docker, AWS, CI/CD, Git_Actions, Cloudflare, Jenkins, Kubernetes"
+    }
+  ]
+}

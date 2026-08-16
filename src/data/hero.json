@@ -1,0 +1,16 @@
+{
+  "name": "SARUN",
+  "title": "Software Developer // IT Support",
+  "buttons": [
+    {
+      "label": "Portfolio",
+      "href": "#work",
+      "primary": true
+    },
+    {
+      "label": "Skills",
+      "href": "#arsenal",
+      "primary": false
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 import { Reveal } from './Reveal';
 import Profile from "../assets/profile.jpg";
+import heroData from '../data/hero.json';
+
 export const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-12 px-6 overflow-hidden">
@@ -9,8 +11,8 @@ export const Hero = () => {
           <div className="w-full h-full rounded-full bg-slate-950 flex items-center justify-center overflow-hidden relative z-10">
             <img 
               src={Profile} 
-              alt="Sarun" 
-              className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100"
+              alt={heroData.name} 
+              className="w-full h-full object-cover transition-all duration-1000 scale-110 group-hover:scale-100"
             />
             <div className="scanner"></div>
           </div>
@@ -19,23 +21,36 @@ export const Hero = () => {
       <div className="text-center max-w-4xl relative z-10">
         <Reveal className="active">
           <h1 className="text-5xl sm:text-7xl md:text-[10rem] font-bold tracking-tighter mb-6 glow-text uppercase leading-none bg-clip-text text-transparent bg-gradient-to-b from-white to-white/40">
-            SARUN
+            {heroData.name}
           </h1>
         </Reveal>
         <Reveal className="active" delay={0.1}>
           <p className="text-cyan-400 mono text-xs sm:text-sm md:text-base tracking-[0.2em] sm:tracking-[0.4em] uppercase mb-12">
-            Software Engineer // AI Engineer
+            {heroData.title}
           </p>
         </Reveal>
         <Reveal className="active" delay={0.2}>
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
-            <a href="#work" className="px-6 sm:px-10 py-3 sm:py-4 bg-gradient-to-r from-violet-600 to-cyan-500 text-white font-bold rounded-full hover:shadow-[0_0_40px_rgba(139,92,246,0.5)] transition-all uppercase text-xs sm:text-sm tracking-widest relative overflow-hidden group">
-              <span className="relative z-10">Portfolio</span>
-              <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
-            </a>
-            <a href="#arsenal" className="px-6 sm:px-10 py-3 sm:py-4 border border-white/10 hover:border-cyan-500/50 backdrop-blur-md rounded-full transition-all uppercase text-xs sm:text-sm tracking-widest bg-white/5">
-              Skills
-            </a>
+            {heroData.buttons.map((btn) => (
+              <a
+                key={btn.label}
+                href={btn.href}
+                className={
+                  btn.primary
+                    ? "px-6 sm:px-10 py-3 sm:py-4 bg-gradient-to-r from-violet-600 to-cyan-500 text-white font-bold rounded-full hover:shadow-[0_0_40px_rgba(139,92,246,0.5)] transition-all uppercase text-xs sm:text-sm tracking-widest relative overflow-hidden group"
+                    : "px-6 sm:px-10 py-3 sm:py-4 border border-white/10 hover:border-cyan-500/50 backdrop-blur-md rounded-full transition-all uppercase text-xs sm:text-sm tracking-widest bg-white/5"
+                }
+              >
+                {btn.primary ? (
+                  <>
+                    <span className="relative z-10">{btn.label}</span>
+                    <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+                  </>
+                ) : (
+                  btn.label
+                )}
+              </a>
+            ))}
           </div>
         </Reveal>
       </div>

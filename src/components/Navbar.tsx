@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import navData from '../data/navigation.json';
 
 interface NavLinkProps {
   to: string;
@@ -45,33 +46,47 @@ export const Navbar = () => {
     };
   }, [isOpen]);
 
-  // Close menu on navigation
-  useEffect(() => {
-    setIsOpen(false);
-  }, [location.pathname]);
+  const closeMenu = () => setIsOpen(false);
 
   return (
     <>
       <header className="fixed top-0 w-full z-50 backdrop-blur-xl border-b border-white/10 px-6 py-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <Link to="/" className="text-2xl font-bold tracking-tighter glow-text flex items-center gap-2">
-            SARUN<span className="text-cyan-400">.DEV</span>
+            {navData.brand.name}<span className="text-cyan-400">{navData.brand.dot}</span>
           </Link>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex gap-10 text-[12px] uppercase tracking-[0.3em] font-medium text-slate-300">
-            <NavLink to="#home" hash isHome={isHome} currentPath={location.pathname}>Start</NavLink>
-            <NavLink to="#arsenal" hash isHome={isHome} currentPath={location.pathname}>Arsenal</NavLink>
-            <NavLink to="#work" hash isHome={isHome} currentPath={location.pathname}>Archive</NavLink>
-            <NavLink to="#certifications" hash isHome={isHome} currentPath={location.pathname}>Certs</NavLink>
-           //<NavLink to="/lab" isHome={isHome} currentPath={location.pathname}>Labs</NavLink>
-            <a href="https://blog.sarun.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">Blog</a>
+            {navData.links.map((link) => (
+              'external' in link && link.external ? (
+                <a
+                  key={link.label}
+                  href={link.to}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <NavLink
+                  key={link.label}
+                  to={link.to}
+                  hash={'hash' in link ? link.hash : undefined}
+                  isHome={isHome}
+                  currentPath={location.pathname}
+                >
+                  {link.label}
+                </NavLink>
+              )
+            ))}
           </nav>
           
           <nav className="hidden md:block">
-            <NavLink to="/contact" isHome={isHome} currentPath={location.pathname}>
+            <NavLink to={navData.contactButton.to} isHome={isHome} currentPath={location.pathname}>
               <span className="px-6 py-2 text-[12px] border border-cyan-400/30 rounded-full hover:bg-cyan-400/10 hover:border-cyan-400/60 transition-all uppercase tracking-widest bg-white/5">
-                Contact
+                {navData.contactButton.label}
               </span>
             </NavLink>
           </nav>
@@ -113,28 +128,39 @@ export const Navbar = () => {
         <div className="absolute inset-0 bg-liquid-space pointer-events-none opacity-50"></div>
         
         <nav className="flex flex-col gap-8 text-center text-lg uppercase tracking-[0.3em] font-medium text-slate-300 z-10">
-          <NavLink to="#home" hash isHome={isHome} currentPath={location.pathname} onClick={() => setIsOpen(false)}>Start</NavLink>
-          <NavLink to="#arsenal" hash isHome={isHome} currentPath={location.pathname} onClick={() => setIsOpen(false)}>Arsenal</NavLink>
-          <NavLink to="#work" hash isHome={isHome} currentPath={location.pathname} onClick={() => setIsOpen(false)}>Archive</NavLink>
-          <NavLink to="#certifications" hash isHome={isHome} currentPath={location.pathname} onClick={() => setIsOpen(false)}>Certs</NavLink>
-          <NavLink to="/lab" isHome={isHome} currentPath={location.pathname} onClick={() => setIsOpen(false)}>Labs</NavLink>
-          <a 
-            href="https://blog.sarun.dev/" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="hover:text-cyan-400 transition-colors"
-            onClick={() => setIsOpen(false)}
-          >
-            Blog
-          </a>
+          {navData.links.map((link) => (
+            'external' in link && link.external ? (
+              <a
+                key={link.label}
+                href={link.to}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-cyan-400 transition-colors"
+                onClick={closeMenu}
+              >
+                {link.label}
+              </a>
+            ) : (
+              <NavLink
+                key={link.label}
+                to={link.to}
+                hash={'hash' in link ? link.hash : undefined}
+                isHome={isHome}
+                currentPath={location.pathname}
+                onClick={closeMenu}
+              >
+                {link.label}
+              </NavLink>
+            )
+          ))}
           <NavLink 
-            to="/contact" 
+            to={navData.contactButton.to} 
             isHome={isHome} 
             currentPath={location.pathname} 
-            onClick={() => setIsOpen(false)}
+            onClick={closeMenu}
           >
             <span className="px-8 py-3 text-[14px] border border-cyan-400/40 rounded-full hover:bg-cyan-400/10 hover:border-cyan-400 transition-all uppercase tracking-widest bg-white/5 inline-block mt-4">
-              Contact
+              {navData.contactButton.label}
             </span>
           </NavLink>
         </nav>

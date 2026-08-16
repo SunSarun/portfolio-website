@@ -1,0 +1,17 @@
+{
+  "brand": {
+    "name": "SARUN",
+    "dot": ".DEV"
+  },
+  "links": [
+    { "label": "Start", "to": "#home", "hash": true },
+    { "label": "Arsenal", "to": "#arsenal", "hash": true },
+    { "label": "Archive", "to": "#work", "hash": true },
+    { "label": "Certs", "to": "#certifications", "hash": true },
+    { "label": "Blog", "to": "https://blog.sarun.dev/", "external": true }
+  ],
+  "contactButton": {
+    "label": "Contact",
+    "to": "/contact"
+  }
+}
