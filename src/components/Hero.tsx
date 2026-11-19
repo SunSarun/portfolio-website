@@ -20,7 +20,7 @@ export const Hero = () => {
       </Reveal>
       <div className="text-center max-w-4xl relative z-10">
         <Reveal className="active">
-          <h1 className="text-5xl sm:text-7xl md:text-[10rem] font-bold tracking-tighter mb-6 glow-text uppercase leading-none bg-clip-text text-transparent bg-gradient-to-b from-white to-white/40">
+          <h1 className="text-5xl sm:text-7xl md:text-[10rem] font-bold tracking-tighter mb-6 glow-text uppercase leading-none bg-clip-text bg-gradient-to-b from-white to-white/40">
             {heroData.name}
           </h1>
         </Reveal>

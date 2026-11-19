@@ -7,7 +7,7 @@ export const Contact = () => {
     <section id="contact" className="relative py-48 px-6 text-center overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-cyan-500/5 blur-[120px] rounded-full pointer-events-none"></div>
       <Reveal className="max-w-4xl mx-auto relative z-10">
-        <h2 className="text-4xl sm:text-6xl md:text-9xl font-bold tracking-tighter mb-12 glow-text uppercase leading-none bg-clip-text text-transparent bg-gradient-to-b from-white to-white/50">
+        <h2 className="text-4xl sm:text-6xl md:text-9xl font-bold tracking-tighter mb-12 glow-text uppercase leading-none bg-clip-text bg-gradient-to-b from-white to-white/50">
           {contactPage.sectionTitle}<span className="text-cyan-400">{contactPage.sectionHighlight}</span>
         </h2>
         <p className="text-slate-400 mono text-xs md:text-sm tracking-[0.5em] mb-16 uppercase">
